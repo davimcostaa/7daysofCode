@@ -59,3 +59,30 @@ body {
     padding: 0.9em;
     border-radius: 7px;
 }
+
+.apresentacao {
+    text-align: center;
+    width: 50%;
+    margin: 6em auto;
+}
+
+.titulo__apresentacao {
+    text-align: center;
+    color: var(--cor-botao);
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 1.5em;
+}
+
+.titulo__principal {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    padding-bottom: 0.9em;
+}
+
+.texto__apresentacao {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--cor-links);
+}
