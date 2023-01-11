@@ -86,3 +86,31 @@ body {
     font-size: 20px;
     color: var(--cor-links);
 }
+
+.metricas__container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 0 4.5em;
+}
+
+.metricas {
+    margin: 0 1.4em;
+}
+
+.titulo__metricas {
+    color: var(--cor-botao);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.titulo--secundario__metricas {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.texto__metricas {
+    font-weight: 400;
+    color: var(--cor-links);
+}
