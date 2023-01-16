@@ -5,6 +5,9 @@
     --fonte-principal: 'Inter';
     --cor-botao: #8E2424;
     --cor-bordas: #EAECF0;
+    --cor-background: #F9FAFB;
+    --cor-borda-input: #D0D5DD;
+    --cor-texto--copyright: #98A2B3;
 }
 
 body {
@@ -40,13 +43,10 @@ body {
     display: flex;
 }
 
-.link {
-    margin: 0 1em;
-}
-
 .paginas {
     text-decoration: none;
     color: var(--cor-links);
+    margin: 0 1em;
 }
 
 .botao {
@@ -59,6 +59,7 @@ body {
     color: #FFFFFF;
     padding: 0.9em;
     border-radius: 7px;
+    text-decoration: none;
 }
 
 .apresentacao {
@@ -96,7 +97,8 @@ body {
 
 .metricas {
     margin: 0 1.4em;
-}
+    transition: 1s all;
+}    
 
 .titulo__metricas {
     color: var(--cor-botao);
@@ -187,9 +189,11 @@ body {
     width: 85%;
     margin: 0 auto;
     padding-top: 3em;
+    padding-bottom: 3em;
     background: rgba(196, 25, 25, 0.03);
     border-radius: 15px;
     text-align: center;
+
 }
 
 .depoimento__titulo {
@@ -220,3 +224,55 @@ body {
     font-size: 14px;
     color: var(--cor-links);
 }
+
+.formulario {
+    text-align: center;
+    background-color: var(--cor-background);
+    padding: 5em;
+    margin-top: 5em;
+}
+
+.titulo__formulario {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 0.7em;
+}
+
+.titulo__formulario--secundario {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cor-links);
+    margin-bottom: 2em;
+}
+
+.input__formulario {
+    border: 1px solid var(--cor-borda-input);
+    padding: 1.1em;
+    width: 28%;
+    margin: 0 1em 2em 0;
+    border-radius: 5px;
+}
+
+.botao__email {
+    border: none;
+    padding: 0.9em;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.texto__copyright {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-texto--copyright);
+}
+
+.paginas:hover, .botao:hover {
+    color: #3A404E;
+    text-decoration: underline;
+}
+
+.metricas:hover {
+    transform: scale(1.1);
+}
+
